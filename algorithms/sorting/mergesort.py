@@ -16,10 +16,10 @@ class MergeSort(Sort):
 		sorted_left = MergeSort.sort(unsorted[:n_elements//2])
 		sorted_right = MergeSort.sort(unsorted[n_elements//2:])
 
-		return MergeSort.merge(sorted_left, sorted_right)
+		return MergeSort._merge(sorted_left, sorted_right)
 
 	@staticmethod
-	def merge(left, right):
+	def _merge(left, right):
 		merged = []
 		left_index = 0
 		right_index = 0
